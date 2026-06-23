@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 — Страница не найдена · ARCA</title>
+<meta name="theme-color" content="#0a0a0f">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  body{display:grid;place-items:center;min-height:100vh;text-align:center;padding:24px}
+  .err404{max-width:560px}
+  .err404__code{
+    font-family:'Playfair Display',serif;font-size:clamp(90px,18vw,180px);
+    font-weight:800;line-height:1;margin-bottom:8px;
+    background:linear-gradient(135deg,#f4d47c,#d4af37,#b8932f);
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  }
+  .err404__title{font-family:'Playfair Display',serif;font-size:clamp(24px,4vw,34px);font-weight:700;margin-bottom:14px}
+  .err404__text{color:var(--text-mute);font-size:16px;margin-bottom:30px}
+  .err404 .btn{margin:0 auto}
+</style>
+</head>
+<body>
+  <div class="err404">
+    <div class="err404__code">404</div>
+    <h1 class="err404__title">Этой страницы пока нет</h1>
+    <p class="err404__text">Зато мы можем сделать ремонт, который точно существует. Вернёмся на главную?</p>
+    <a href="/" class="btn btn--primary btn--lg">← На главную</a>
+  </div>
+</body>
+</html>

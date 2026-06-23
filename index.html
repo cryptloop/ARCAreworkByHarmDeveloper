@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ARCA — Премиальный ремонт квартир под ключ в Екатеринбурге</title>
+<meta name="description" content="Ремонт квартир под ключ в Екатеринбурге. Гарантия 5 лет, оплата в 4 этапа, бесплатная 3D-визуализация. Фиксированная смета без доплат.">
+<meta name="keywords" content="ремонт квартир Екатеринбург, ремонт под ключ, дизайнерский ремонт, отделка квартир, ARCA">
+<meta name="author" content="ARCA">
+<meta name="theme-color" content="#0a0a0f">
+
+<!-- Open Graph / соцсети -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="ARCA — Премиальный ремонт квартир под ключ в Екатеринбурге">
+<meta property="og:description" content="Гарантия 5 лет, оплата в 4 этапа, бесплатная 3D-визуализация. Фиксированная смета без скрытых доплат.">
+<meta property="og:image" content="images/hero.jpg">
+<meta property="og:locale" content="ru_RU">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ARCA — Ремонт квартир под ключ в Екатеринбурге">
+<meta name="twitter:description" content="Гарантия 5 лет, оплата в 4 этапа, бесплатная 3D-визуализация.">
+<meta name="twitter:image" content="images/hero.jpg">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="favicon.svg">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ===== HEADER ===== -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#hero" class="logo">
+      <span class="logo__mark">A</span>
+      <span class="logo__text">ARCA<span class="logo__dot">.</span></span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#advantages" class="nav__link">Преимущества</a>
+      <a href="#tariffs" class="nav__link">Тарифы</a>
+      <a href="#styles" class="nav__link">Стили</a>
+      <a href="#steps" class="nav__link">Этапы</a>
+      <a href="#calculator" class="nav__link">Калькулятор</a>
+      <a href="#faq" class="nav__link">Вопросы</a>
+    </nav>
+    <div class="header__actions">
+      <a href="tel:+73432000000" class="header__phone">+7 (343) 200-00-00</a>
+      <a href="#contact" class="btn btn--primary btn--sm">Оставить заявку</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== MOBILE MENU ===== -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#advantages" class="mobile-menu__link">Преимущества</a>
+  <a href="#tariffs" class="mobile-menu__link">Тарифы</a>
+  <a href="#styles" class="mobile-menu__link">Стили</a>
+  <a href="#steps" class="mobile-menu__link">Этапы</a>
+  <a href="#calculator" class="mobile-menu__link">Калькулятор</a>
+  <a href="#faq" class="mobile-menu__link">Вопросы</a>
+  <a href="#contact" class="btn btn--primary mobile-menu__cta">Оставить заявку</a>
+</div>
+
+<main>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+  <div class="hero__bg" id="heroBg"></div>
+  <div class="hero__overlay"></div>
+  <div class="container hero__inner">
+    <div class="hero__content">
+      <span class="hero__badge reveal">★ 15 лет на рынке · более 1200 сданных объектов</span>
+      <h1 class="hero__title reveal" data-delay="1">
+        Ремонт квартир <span class="text-gradient">под ключ</span><br>в Екатеринбурге
+      </h1>
+      <p class="hero__subtitle reveal" data-delay="2">
+        Фиксированная смета без скрытых доплат. Гарантия <strong>5 лет</strong>.
+        Оплата в 4 этапа. Бесплатная 3D-визуализация вашего интерьера.
+      </p>
+      <div class="hero__cta reveal" data-delay="3">
+        <a href="#calculator" class="btn btn--primary btn--lg">Рассчитать стоимость</a>
+        <a href="#tariffs" class="btn btn--ghost btn--lg">Смотреть тарифы</a>
+      </div>
+      <div class="hero__stats reveal" data-delay="4">
+        <div class="hero__stat">
+          <span class="hero__stat-num" data-count="1200" data-suffix="+">0</span>
+          <span class="hero__stat-label">Сданных объектов</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-num" data-count="5" data-suffix=" лет">0</span>
+          <span class="hero__stat-label">Гарантии</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-num" data-count="98" data-suffix="%">0</span>
+          <span class="hero__stat-label">Довольных клиентов</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero__card reveal" data-delay="3">
+      <div class="hero__card-glow"></div>
+      <h3 class="hero__card-title">Получите расчёт за 15 минут</h3>
+      <p class="hero__card-text">Оставьте контакты — бесплатно подготовим смету и 3D-эскиз вашего ремонта.</p>
+      <form class="hero__form" id="leadForm">
+        <!-- Web3Forms: замените значение access_key на свой ключ с web3forms.com -->
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+        <input type="hidden" name="subject" value="Новая заявка с лендинга ARCA (Hero)">
+        <input type="hidden" name="from_name" value="ARCA Landing">
+        <input type="hidden" name="redirect" value="false">
+        <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off">
+        <input type="text" name="name" placeholder="Ваше имя" required>
+        <input type="tel" name="phone" placeholder="Телефон" required>
+        <button type="submit" class="btn btn--primary btn--block">Получить расчёт →</button>
+      </form>
+      <p class="hero__card-note">🔒 Перезвоним в течение 15 минут. Без спама.</p>
+    </div>
+  </div>
+  <a href="#advantages" class="hero__scroll" aria-label="Листайте ниже">
+    <span>Листайте ниже</span>
+    <span class="hero__scroll-mouse"><span></span></span>
+  </a>
+</section>
+
+<!-- ===== TRUST BAR ===== -->
+<section class="trust">
+  <div class="container trust__inner">
+    <div class="trust__item reveal">
+      <div class="trust__icon">📋</div>
+      <div><strong>Фиксированная смета</strong><span>без доплат сверх договора</span></div>
+    </div>
+    <div class="trust__item reveal" data-delay="1">
+      <div class="trust__icon">🛡️</div>
+      <div><strong>Гарантия 5 лет</strong><span>по договору на все работы</span></div>
+    </div>
+    <div class="trust__item reveal" data-delay="2">
+      <div class="trust__icon">💳</div>
+      <div><strong>Оплата в 4 этапа</strong><span>платите только за результат</span></div>
+    </div>
+    <div class="trust__item reveal" data-delay="3">
+      <div class="trust__icon">📐</div>
+      <div><strong>Бесплатный дизайн</strong><span>3D-визуализация под ваш бюджет</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ADVANTAGES ===== -->
+<section class="section advantages" id="advantages">
+  <div class="container">
+    <div class="section__head">
+      <span class="section__eyebrow reveal">Почему ARCA</span>
+      <h2 class="section__title reveal" data-delay="1">Ремонт, который <span class="text-gradient">окупается</span></h2>
+      <p class="section__lead reveal" data-delay="2">
+        Мы убрали всё, что бесит в ремонте: непредсказуемые сметы, пропавших прорабов, сорванные сроки. Остаётся только результат.
+      </p>
+    </div>
+    <div class="advantages__grid">
+      <article class="adv-card reveal">
+        <div class="adv-card__icon">💰</div>
+        <h3>Точно в смету</h3>
+        <p>Цена в договоре = цена финальная. Если что-то выходит за рамки — это наша ошибка, платим за неё мы, а не вы.</p>
+      </article>
+      <article class="adv-card reveal" data-delay="1">
+        <div class="adv-card__icon">⏱️</div>
+        <h3>Сроки по графику</h3>
+        <p>Подробный план работ с еженедельными отчётами. Вы видите, что происходит на объекте, не выезжая туда.</p>
+      </article>
+      <article class="adv-card reveal" data-delay="2">
+        <div class="adv-card__icon">👥</div>
+        <h3>Свои мастера</h3>
+        <p>Штатные бригады, а не случайные подёнщики. Каждый специалист — с опытом от 7 лет и аттестацией.</p>
+      </article>
+      <article class="adv-card reveal" data-delay="3">
+        <div class="adv-card__icon">📷</div>
+        <h3>Контроль 24/7</h3>
+        <p>Онлайн-трансляция с объекта в закрытом чате. Фото и видео отчёты каждый день без напоминаний.</p>
+      </article>
+      <article class="adv-card reveal" data-delay="4">
+        <div class="adv-card__icon">🧹</div>
+        <h3>Чистый финал</h3>
+        <p>Уборка и вывоз мусора после ремонта — за наш счёт. Вы заходите в готовую квартиру, а не на стройплощадку.</p>
+      </article>
+      <article class="adv-card reveal" data-delay="5">
+        <div class="adv-card__icon">🏆</div>
+        <h3>Сервис уровня отеля</h3>
+        <p>Персональный менеджер, который на связи 7 дней в неделю. Один контакт вместо десяти звонков разным людям.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TARIFFS ===== -->
+<section class="section tariffs" id="tariffs">
+  <div class="container">
+    <div class="section__head">
+      <span class="section__eyebrow reveal">Тарифы</span>
+      <h2 class="section__title reveal" data-delay="1">Выберите свой <span class="text-gradient">уровень</span></h2>
+      <p class="section__lead reveal" data-delay="2">
+        Три готовых пакета под любой бюджет. Все цены — за м² «под ключ», включая материалы и работу.
+      </p>
+    </div>
+    <div class="tariffs__grid">
+
+      <article class="tariff reveal">
+        <div class="tariff__head">
+          <h3 class="tariff__name">Эконом</h3>
+          <p class="tariff__tagline">Чистовая отделка базового уровня</p>
+        </div>
+        <div class="tariff__price">
+          <span class="tariff__value">от 7 900 ₽</span>
+          <span class="tariff__unit">за м²</span>
+        </div>
+        <ul class="tariff__list">
+          <li>Выравнивание стен и потолка</li>
+          <li>Покраска / обои</li>
+          <li>Ламинат на пол</li>
+          <li>Базовая электрика</li>
+          <li>Сантехника черновая + чистовая</li>
+          <li class="tariff__list--off">Дизайн-проект</li>
+          <li class="tariff__list--off">3D-визуализация</li>
+        </ul>
+        <a href="#contact" class="btn btn--ghost btn--block">Выбрать</a>
+      </article>
+
+      <article class="tariff tariff--featured reveal" data-delay="1">
+        <div class="tariff__ribbon">★ Хит продаж</div>
+        <div class="tariff__head">
+          <h3 class="tariff__name">Комфорт</h3>
+          <p class="tariff__tagline">Оптимально для жизни «сразу и надолго»</p>
+        </div>
+        <div class="tariff__price">
+          <span class="tariff__value">от 14 500 ₽</span>
+          <span class="tariff__unit">за м²</span>
+        </div>
+        <ul class="tariff__list">
+          <li>Усиленная шумоизоляция</li>
+          <li>Декоративная штукатурка / панели</li>
+          <li>Кварцвинил / инженерная доска</li>
+          <li>Сценарии освещения</li>
+          <li>Премиальная сантехника</li>
+          <li>Дизайн-проект в подарок</li>
+          <li>3D-визуализация 2 ракурсов</li>
+        </ul>
+        <a href="#contact" class="btn btn--primary btn--block">Выбрать</a>
+      </article>
+
+      <article class="tariff reveal" data-delay="2">
+        <div class="tariff__head">
+          <h3 class="tariff__name">Премиум</h3>
+          <p class="tariff__tagline">Авторский интерьер без компромиссов</p>
+        </div>
+        <div class="tariff__price">
+          <span class="tariff__value">от 24 900 ₽</span>
+          <span class="tariff__unit">за м²</span>
+        </div>
+        <ul class="tariff__list">
+          <li>Умный дом и автоматика</li>
+          <li>Натуральный камень / дерево</li>
+          <li>Системы климата и очистки</li>
+          <li>Скрытый монтаж и подсветки</li>
+          <li>Авторский надзор</li>
+          <li>Дизайн-проект премиум</li>
+          <li>Неограниченная 3D-визуализация</li>
+        </ul>
+        <a href="#contact" class="btn btn--ghost btn--block">Выбрать</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== STYLES ===== -->
+<section class="section styles" id="styles">
+  <div class="container">
+    <div class="section__head">
+      <span class="section__eyebrow reveal">Стили</span>
+      <h2 class="section__title reveal" data-delay="1">Интерьер в вашем <span class="text-gradient">характере</span></h2>
+      <p class="section__lead reveal" data-delay="2">
+        Не знаете, что выбрать? Подберём стиль под ваш образ жизни — от лаконичной японии до тёплого лофта.
+      </p>
+    </div>
+    <div class="styles__grid">
+      <article class="style-card reveal" style="--img:url('images/style-minimal.jpg')">
+        <div class="style-card__body">
+          <h3>Минимализм</h3>
+          <p>Чистые линии, воздух и свет. Беспроигрышно для любого метража.</p>
+        </div>
+      </article>
+      <article class="style-card reveal" data-delay="1" style="--img:url('images/style-classic.jpg')">
+        <div class="style-card__body">
+          <h3>Современная классика</h3>
+          <p>Благородные фактуры и симметрия для тех, кто ценит традиции.</p>
+        </div>
+      </article>
+      <article class="style-card reveal" data-delay="2" style="--img:url('images/style-loft.jpg')">
+        <div class="style-card__body">
+          <h3>Лофт</h3>
+          <p>Бетон, кирпич и металл. Характерно, дерзко и очень стильно.</p>
+        </div>
+      </article>
+      <article class="style-card reveal" data-delay="3" style="--img:url('images/style-japan.jpg')">
+        <div class="style-card__body">
+          <h3>Япония / Ваби-саби</h3>
+          <p>Природные материалы, тишина и осознанный минимализм.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STEPS ===== -->
+<section class="section steps" id="steps">
+  <div class="container">
+    <div class="section__head">
+      <span class="section__eyebrow reveal">Как мы работаем</span>
+      <h2 class="section__title reveal" data-delay="1">Прозрачно на <span class="text-gradient">каждом шаге</span></h2>
+      <p class="section__lead reveal" data-delay="2">
+        Четыре понятных этапа. Вы всегда знаете, что происходит и сколько это стоит.
+      </p>
+    </div>
+    <div class="steps__grid">
+      <div class="step reveal">
+        <div class="step__num">01</div>
+        <h3 class="step__title">Заявка и замер</h3>
+        <p class="step__text">Выезжаем на объект бесплатно, делаем точный замер и фиксируем ваши пожелания.</p>
+      </div>
+      <div class="step reveal" data-delay="1">
+        <div class="step__num">02</div>
+        <h3 class="step__title">Смета и дизайн</h3>
+        <p class="step__text">Готовим фиксированную смету и 3D-визуализацию. Согласуем каждую деталь до старта.</p>
+      </div>
+      <div class="step reveal" data-delay="2">
+        <div class="step__num">03</div>
+        <h3 class="step__title">Ремонт под ключ</h3>
+        <p class="step__text">Работаем по графику с еженедельными отчётами. Оплата — за каждый завершённый этап.</p>
+      </div>
+      <div class="step reveal" data-delay="3">
+        <div class="step__num">04</div>
+        <h3 class="step__title">Сдача и гарантия</h3>
+        <p class="step__text">Убираем, подписываем акт и выдаём гарантию 5 лет. Сдаём раньше срока — это норма.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CALCULATOR ===== -->
+<section class="section calculator" id="calculator">
+  <div class="container calculator__inner">
+    <div class="calculator__intro">
+      <span class="section__eyebrow reveal">Калькулятор</span>
+      <h2 class="section__title reveal" data-delay="1">Узнайте цену <span class="text-gradient">за минуту</span></h2>
+      <p class="section__lead reveal" data-delay="2">
+        Двигайте ползунки — стоимость пересчитывается мгновенно. Это предварительный расчёт, точную смету подготовим после замера.
+      </p>
+      <ul class="calculator__perks reveal" data-delay="3">
+        <li>✓ Замер и смета — бесплатно</li>
+        <li>✓ 3D-эскиз в подарок</li>
+        <li>✓ Скидка до 7% при заказе до конца месяца</li>
+      </ul>
+    </div>
+    <div class="calculator__box reveal" data-delay="2">
+      <div class="calc-field">
+        <div class="calc-field__head">
+          <label>Площадь квартиры</label>
+          <span class="calc-field__value" id="areaVal">60 м²</span>
+        </div>
+        <input type="range" id="areaRange" min="20" max="250" value="60" step="5">
+      </div>
+      <div class="calc-field">
+        <div class="calc-field__head">
+          <label>Уровень ремонта</label>
+        </div>
+        <div class="calc-toggles" id="levelToggles">
+          <button class="calc-toggle" data-price="7900">Эконом</button>
+          <button class="calc-toggle is-active" data-price="14500">Комфорт</button>
+          <button class="calc-toggle" data-price="24900">Премиум</button>
+        </div>
+      </div>
+      <div class="calc-field">
+        <div class="calc-field__head">
+          <label>Дополнительно</label>
+        </div>
+        <div class="calc-options" id="calcOptions">
+          <label class="calc-check"><input type="checkbox" data-add="9000"><span>Дизайн-проект</span></label>
+          <label class="calc-check"><input type="checkbox" data-add="4500"><span>Демонтаж старой отделки</span></label>
+          <label class="calc-check"><input type="checkbox" data-add="3500"><span>Перепланировка</span></label>
+        </div>
+      </div>
+      <div class="calc-total">
+        <div>
+          <span class="calc-total__label">Предварительная стоимость</span>
+          <span class="calc-total__value" id="calcTotal">от 870 000 ₽</span>
+        </div>
+        <a href="#contact" class="btn btn--primary btn--lg" id="calcCta">Получить точный расчёт</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== REVIEWS ===== -->
+<section class="section reviews">
+  <div class="container">
+    <div class="section__head">
+      <span class="section__eyebrow reveal">Отзывы</span>
+      <h2 class="section__title reveal" data-delay="1">Нам доверяют <span class="text-gradient">своими домами</span></h2>
+    </div>
+    <div class="reviews__grid">
+      <article class="review reveal">
+        <div class="review__stars">★★★★★</div>
+        <p class="review__text">«Сделали двушку в ЖК «Светлый» за 2,5 месяца. Ни одной доплаты сверх сметы — для Екатеринбурга это редкость. Отдельный респект за ежедневные фото в чате».</p>
+        <div class="review__author">
+          <div class="review__avatar">М</div>
+          <div><strong>Марина К.</strong><span>ЖК «Светлый», 64 м²</span></div>
+        </div>
+      </article>
+      <article class="review reveal" data-delay="1">
+        <div class="review__stars">★★★★★</div>
+        <p class="review__text">«Брал тариф Премиум. Умный дом, скрытая подсветка — всё как с картинки в 3D. Сдали на неделю раньше. ARCA — единственные, кого могу рекомендовать без оговорок».</p>
+        <div class="review__author">
+          <div class="review__avatar">Д</div>
+          <div><strong>Дмитрий А.</strong><span>ЖК «Английский квартал», 98 м²</span></div>
+        </div>
+      </article>
+      <article class="review reveal" data-delay="2">
+        <div class="review__stars">★★★★★</div>
+        <p class="review__text">«Долго выбирала подрядчика. ARCA подкупили тем, что сразу сказали реальную цену, без „а потом добавим“. Дизайн сделали бесплатно, ремонт — аккуратный».</p>
+        <div class="review__author">
+          <div class="review__avatar">О</div>
+          <div><strong>Ольга В.</strong><span>ЖК «Клубный дом», 78 м²</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section faq" id="faq">
+  <div class="container">
+    <div class="section__head">
+      <span class="section__eyebrow reveal">Вопросы</span>
+      <h2 class="section__title reveal" data-delay="1">Отвечаем на <span class="text-gradient">частые</span></h2>
+    </div>
+    <div class="faq__list">
+      <div class="faq-item reveal">
+        <button class="faq-item__q">Чем ARCA отличается от обычной бригады?<span class="faq-item__icon"></span></button>
+        <div class="faq-item__a"><p>Мы работаем по договору с фиксированной сметой и гарантией 5 лет, а не на честном слове. У нас штатные бригады, личный менеджер и ежедневные отчёты с объекта. Вы платите за результат, а не за процесс.</p></div>
+      </div>
+      <div class="faq-item reveal" data-delay="1">
+        <button class="faq-item__q">Что будет, если смета вырастет в процессе?<span class="faq-item__icon"></span></button>
+        <div class="faq-item__a"><p>Если дополнительные работы появились не по вашей инициативе (например, вскрылись скрытые дефекты), их оплачивает ARCA. Любые ваши изменения в проекте оформляются допсоглашением с прозрачной ценой заранее.</p></div>
+      </div>
+      <div class="faq-item reveal" data-delay="2">
+        <button class="faq-item__q">Как устроена оплата по этапам?<span class="faq-item__icon"></span></button>
+        <div class="faq-item__a"><p>Сумма делится на 4 платежа: аванс на материалы, черновые работы, чистовая отделка и финальный платёж после приёмки. Вы видите результат каждого этапа до того, как за него платите.</p></div>
+      </div>
+      <div class="faq-item reveal" data-delay="3">
+        <button class="faq-item__q">Даёте ли вы рассрочку?<span class="faq-item__icon"></span></button>
+        <div class="faq-item__a"><p>Да, у нас есть беспроцентная рассрочка до 12 месяцев через банки-партнёры. Оформление занимает около 20 минут, первый платёж — через 1–3 месяца.</p></div>
+      </div>
+      <div class="faq-item reveal" data-delay="4">
+        <button class="faq-item__q">Что входит в гарантию 5 лет?<span class="faq-item__icon"></span></button>
+        <div class="faq-item__a"><p>Гарантия покрывает все выполненные нами работы: отделку, электрику, сантехнику и инженерные системы. При обращении выезжаем и устраняем за свой счёт — без экспертиз и споров.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT / CTA ===== -->
+<section class="section contact" id="contact">
+  <div class="container">
+    <div class="contact__box reveal">
+      <div class="contact__bg-glow"></div>
+      <div class="contact__left">
+        <h2 class="contact__title">Готовы увидеть свой <span class="text-gradient">будущий ремонт?</span></h2>
+        <p class="contact__text">Оставьте заявку — менеджер перезвонит в течение 15 минут, ответит на вопросы и бесплатно запишет на замер. Без обязательств.</p>
+        <div class="contact__contacts">
+          <a href="tel:+73432000000" class="contact__contact">
+            <span class="contact__contact-icon">📞</span>
+            <span><strong>+7 (343) 200-00-00</strong><small>Ежедневно 9:00–21:00</small></span>
+          </a>
+          <div class="contact__contact">
+            <span class="contact__contact-icon">📍</span>
+            <span><strong>Екатеринбург</strong><small>ул. Малышева, 5, офис 412</small></span>
+          </div>
+        </div>
+      </div>
+      <form class="contact__form" id="contactForm">
+        <!-- Web3Forms: замените значение access_key на свой ключ с web3forms.com -->
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+        <input type="hidden" name="subject" value="Новая заявка с лендинга ARCA (Контакты)">
+        <input type="hidden" name="from_name" value="ARCA Landing">
+        <input type="hidden" name="redirect" value="false">
+        <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off">
+        <h3>Бесплатный замер и смета</h3>
+        <input type="text" name="name" placeholder="Как вас зовут?" required>
+        <input type="tel" name="phone" placeholder="Телефон для связи" required>
+        <select name="service" required>
+          <option value="">Что вас интересует?</option>
+          <option>Ремонт «Эконом»</option>
+          <option>Ремонт «Комфорт»</option>
+          <option>Ремонт «Премиум»</option>
+          <option>Дизайн-проект</option>
+          <option>Пока не определился</option>
+        </select>
+        <textarea name="comment" placeholder="Комментарий (необязательно)" rows="2"></textarea>
+        <button type="submit" class="btn btn--primary btn--block btn--lg">Отправить заявку →</button>
+        <p class="contact__note">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <a href="#hero" class="logo">
+        <span class="logo__mark">A</span>
+        <span class="logo__text">ARCA<span class="logo__dot">.</span></span>
+      </a>
+      <p>Премиальный ремонт квартир под ключ в Екатеринбурге. Гарантия 5 лет, оплата в 4 этапа.</p>
+    </div>
+    <div class="footer__col">
+      <h4>Навигация</h4>
+      <a href="#advantages">Преимущества</a>
+      <a href="#tariffs">Тарифы</a>
+      <a href="#styles">Стили</a>
+      <a href="#calculator">Калькулятор</a>
+    </div>
+    <div class="footer__col">
+      <h4>Контакты</h4>
+      <a href="tel:+73432000000">+7 (343) 200-00-00</a>
+      <a href="mailto:hello@arca-sk.ru">hello@arca-sk.ru</a>
+      <span>Екатеринбург, ул. Малышева, 5</span>
+    </div>
+    <div class="footer__col">
+      <h4>Мы в сети</h4>
+      <div class="footer__social">
+        <a href="#">VK</a><a href="#">Telegram</a><a href="#">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      © 2026 ARCA. Все права защищены. · Демонстрационный лендинг.
+    </div>
+  </div>
+</footer>
+
+<!-- ===== FLOATING CTA ===== -->
+<a href="#contact" class="float-cta" id="floatCta">💬 <span>Рассчитать ремонт</span></a>
+
+<!-- ===== TOAST ===== -->
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
